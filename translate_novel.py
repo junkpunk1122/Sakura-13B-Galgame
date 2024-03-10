@@ -57,7 +57,7 @@ def get_model_response(model: AutoModelForCausalLM, tokenizer: AutoTokenizer, pr
             min_new_tokens=1,
             do_sample=True,
             repetition_penalty=1.0,
-            frequency_penalty=0.05
+            frequency_penalty=0.2
         )
 
     backup_generation_config_stage3 = GenerationConfig(
